@@ -1,14 +1,15 @@
-
 package com.github.hcsp.objectbasic;
-org.junit.jupiter.api.Test;;org.hamcrest.Matchers;;com.github.blindpirate.extensions.CaptureSystemOutput;
 
-class MainTest {
+import com.github.blindpirate.extensions.CaptureSystemOutput;
+import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Test;
 
-@Test
-@CaptureSystemOutput
-public void correctMethodInvocation(CaptureSystemOutput.OutputCapture outputCapture) {
-    outputCapture.expect(Matchers.containsString("I'm Number!"));
-    Main.main(null);
-}
+public class MainTest {
 
+    @Test
+    @CaptureSystemOutput
+    public void correctMethodInvocation(CaptureSystemOutput.OutputCapture outputCapture) {
+        outputCapture.expect(Matchers.containsString("I'm Number!"));
+        Main.main(null);
+    }
 }
