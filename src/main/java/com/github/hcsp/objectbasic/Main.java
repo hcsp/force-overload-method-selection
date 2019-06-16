@@ -6,13 +6,13 @@ public class Main {
         print(1);
     }
 
-//    public static void print(int i) {
-//        System.out.println("I'm int!");
-//    }
-//
-//    public static void print(Integer i) {
-//        System.out.println("I'm Integer!");
-//    }
+    public static void print(int i) {
+        System.out.println("I'm int!");
+    }
+
+    public static void print(Integer i) {
+        System.out.println("I'm Integer!");
+    }
 
     public static void print(Number i) {
         System.out.println("I'm Number!");
