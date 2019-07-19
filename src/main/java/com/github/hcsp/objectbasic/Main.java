@@ -1,9 +1,11 @@
 package com.github.hcsp.objectbasic;
 
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
         // 现在被选中的方法是print(int)，请强制令其选中方法print(Number i)
-        print(1);
+        print((Number) 1);
     }
 
     public static void print(int i) {
