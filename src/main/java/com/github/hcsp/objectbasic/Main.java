@@ -3,8 +3,7 @@ package com.github.hcsp.objectbasic;
 public class Main {
     public static void main(String[] args) {
         // 现在被选中的方法是print(int)，请强制令其选中方法print(Number i)
-        print((Number)1);
-        //此时print(Number i)亮了起来，需求解决了
+        print(1);
     }
 
     public static void print(int i) {
